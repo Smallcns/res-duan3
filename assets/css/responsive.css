@@ -98,9 +98,50 @@
   #navbar__list--mobile {
     margin-top: 30px;
   }
+
+  /* khối hero */
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero__media {
+    order: 1;
+  }
+
+  .hero__content {
+    order: 2;
+    width: 90%;
+    text-align: center;
+    width: 80%;
+    margin: 22px auto;
+  }
+
+  .hero__row {
+    justify-content: center;
+  }
+
+  /* khối service */
+  .service__row {
+    flex-direction: column;
+  }
+
+  .service__img {
+    width: 719px;
+    height: 453px;
+  }
+
+  .service__list {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .service-item {
+    width: 90%;
+    text-align: start;
+  }
 }
 
-/* Tablet */
+/* ===================================Tablet =========================================*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /* ẩn nút đăng ký trên tablet */
   .show-on-mobile {
@@ -108,7 +149,7 @@
   }
 }
 
-/* Mobile */
+/* =================================== Mobile=========================================*/
 @media screen and (max-width: 767px) {
   /* ẩn bỏ cta group */
   .header__action {
@@ -145,8 +186,7 @@
 }
 
 /* Tạm ẩn các phần không liên quan */
-.hero,
 main,
 .footer {
-  display: none;
+  display: n one;
 }
