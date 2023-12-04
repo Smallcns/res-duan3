@@ -98,7 +98,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /* ẩn nút đăng ký trên tablet */
-  .header__action--hide {
+  .show-on-mobile {
     display: none;
   }
 }
