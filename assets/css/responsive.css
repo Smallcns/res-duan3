@@ -1,0 +1,284 @@
+/* PC */
+@media screen and (min-width: 1200px) {
+  /*4. ẩn menu trên PC */
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 1199px) {
+  /* 1. ẩn navbar trên tablet và mobile */
+  .navbar {
+    display: none;
+  }
+
+  /* 2. chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+  }
+
+  /* 3. icon menu  */
+  .toggle-menu__icon {
+    position: absolute;
+    left: 26px;
+    top: 38px;
+    width: 24px;
+    color: #fff;
+  }
+
+  /* 5.overlay cho menubar */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    /* bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* 6. code cho menu drawer */
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background: #2e1919;
+    z-index: 2;
+    padding: 60px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+
+  /* 7. kiểm tra nếu checkbox được check thì hiện overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 8. kiểm tra nếu checkbox được check hiện menu */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  /* 9.sửa navbar list ngang sang dọc  */
+  .navbar__list {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  /* 10.chuyển navbar link thành block để dễ click trên mobile */
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+  /* 11. thêm hiệu ứng khi hover nhìn trên mobile cho rõ ràng  */
+  .navbar__link:hover {
+    background-color: #00ffff37;
+    border-radius: 10px;
+  }
+
+  /* 12. Thêm nút tắt menu */
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu__close {
+    width: 24px;
+    color: #fff;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* ẩn nút đăng ký trên tablet */
+  .header__action--hide {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  /* ẩn bỏ cta group */
+  .header__action {
+    display: none;
+  }
+  .toggle-menu__icon {
+    top: 18px;
+  }
+  /* set menu phủ kín màn hình mobile */
+  .menu-drawer {
+    inset: 0;
+  }
+
+  /* 13. thêm vạch kẻ ngăn cta group */
+  .separate {
+    border-top: 1.5px solid #8c8b8b;
+    margin-top: 10px;
+  }
+
+  /* code lại cta group */
+  .header__action--hide {
+    color: #fff;
+    margin-top: 20px;
+  }
+  /* Bỏ dot của thẻ li */
+  .navbar__item {
+    list-style-type: none;
+  }
+}
+
+/* Tạm ẩn các phần không liên quan */
+/* PC */
+@media screen and (min-width: 1200px) {
+  /*4. ẩn menu trên PC */
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 1199px) {
+  /* 1. ẩn navbar trên tablet và mobile */
+  .navbar {
+    display: none;
+  }
+
+  /* 2. chuyển logo vào giữa */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+  }
+
+  /* 3. icon menu  */
+  .toggle-menu__icon {
+    position: absolute;
+    left: 26px;
+    top: 38px;
+    width: 24px;
+    color: #fff;
+  }
+
+  /* 5.overlay cho menubar */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    /* bình thường ẩn overlay đi */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  /* 6. code cho menu drawer */
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background: #2e1919;
+    z-index: 2;
+    padding: 60px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+  }
+
+  /* 7. kiểm tra nếu checkbox được check thì hiện overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* 8. kiểm tra nếu checkbox được check hiện menu */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  /* 9.sửa navbar list ngang sang dọc  */
+  .navbar__list {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  /* 10.chuyển navbar link thành block để dễ click trên mobile */
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+  /* 11. thêm hiệu ứng khi hover nhìn trên mobile cho rõ ràng  */
+
+  .navbar__link:hover {
+    background-color: #00ffff37;
+  }
+
+  /* 12. Thêm nút tắt menu */
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu__close {
+    width: 24px;
+    color: #fff;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* ẩn nút đăng ký trên tablet */
+  .header__action--hide {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  /* ẩn bỏ cta group */
+  .header__action {
+    display: none;
+  }
+  .toggle-menu__icon {
+    top: 18px;
+  }
+  /* set menu phủ cách lề phải 20% mobile */
+  .menu-drawer {
+    inset: 0 20% 0 0;
+  }
+
+  /* 13. thêm vạch kẻ ngăn cta group */
+  .separate {
+    border-top: 1.5px solid #8c8b8b;
+    margin-top: 10px;
+  }
+
+  /* code lại cta group */
+  .header__action--hide {
+    color: #fff;
+    margin-top: 20px;
+  }
+  /* Bỏ dot của thẻ li */
+  .navbar__item {
+    list-style-type: none;
+  }
+
+  /* chỉnh lại padding nhỏ lại  */
+  .menu-drawer {
+    padding: 40px;
+  }
+}
+
+/* Tạm ẩn các phần không liên quan */
+.hero,
+main,
+.footer {
+  display: none;
+}
