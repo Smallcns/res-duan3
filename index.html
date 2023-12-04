@@ -46,7 +46,7 @@
                 <a href="./"><img src="./assets/img/logo.svg" alt="shine smile" class="logo header__logo"></a>
                 <!-- nav -->
                 <nav class="navbar">
-                    <ul class="navbar__list">
+                    <ul class="navbar__list" id="navbar__list--pc">
                         <li class="navbar__item">
                             <a href="#!" class="navbar__link navbar__link--active">Home</a>
                         </li>
@@ -60,6 +60,7 @@
                             <a href="#!" class="navbar__link">Doctors</a>
                         </li>
                     </ul>
+
                 </nav>
                 <!-- cta action -->
                 <div class="header__action">
@@ -124,20 +125,16 @@
             </div>
 
             <!-- Navigation mobile-->
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a href="#!" class="navbar__link navbar__link--active">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#!" class="navbar__link">Services</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#!" class="navbar__link">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#!" class="navbar__link">Doctors</a>
-                </li>
-            </ul>
+            <!-- sử dụng js để copy navbar -->
+            <ul id="navbar__list--mobile"></ul>
+            <script>
+                const pcNav = document.querySelector("#navbar__list--pc");
+                const mobileNav = document.querySelector("#navbar__list--mobile");
+
+                // sao chép pcNav sang mobileNav
+                mobileNav.innerHTML = pcNav.innerHTML;
+            </script>
+
             <!-- separate ngăn cách  -->
             <div class="separate"></div>
             <!-- cta action -->

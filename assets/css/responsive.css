@@ -93,6 +93,11 @@
     width: 24px;
     color: #fff;
   }
+
+  /* điều chỉnh margin top navbar list cách logo */
+  #navbar__list--mobile {
+    margin-top: 30px;
+  }
 }
 
 /* Tablet */
