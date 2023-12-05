@@ -1,12 +1,13 @@
 /* PC */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   /*4. ẩn menu trên PC */
   .mobile-header {
     display: none;
   }
 }
+
 /* Tablet & mobile */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   /* 1. ẩn navbar trên tablet và mobile */
   .navbar {
     display: none;
@@ -109,6 +110,7 @@
 
   .hero__content {
     order: 2;
+    width: 90%;
     text-align: center;
     width: 80%;
     margin: 22px auto;
@@ -124,7 +126,8 @@
   }
 
   .service__img {
-    width: 100%;
+    width: 719px;
+    height: 453px;
   }
 
   .service__list {
@@ -136,82 +139,6 @@
     width: 90%;
     text-align: start;
   }
-
-  /* work list  */
-  .work__list {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-  }
-
-  /* about  */
-  .about-row {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .about__media {
-    width: 100%;
-  }
-
-  .about-content {
-    width: 90%;
-    text-align: center;
-  }
-
-  /* ẩn ảnh small */
-  .about__img--small {
-    display: none;
-  }
-
-  /* căn giữa ảnh lớn */
-  .about__img--big {
-    margin: 25px auto;
-    border-radius: 15px;
-    width: 100%;
-  }
-
-  /* team list */
-  .team__list {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
-  }
-
-  /* install */
-  .install__img {
-    display: none;
-  }
-
-  .install__content {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .team-item__thumb {
-    margin: 0 auto;
-  }
-
-  /* blog */
-  .blog__inner {
-    flex-direction: column;
-  }
-  .blog__list {
-    order: 1;
-  }
-
-  .blog__content {
-    order: 2;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .blog__heading {
-    max-width: 90%;
-    margin-top: 30px;
-  }
-
-  /* footer-top */
 }
 
 /* ===================================Tablet =========================================*/
@@ -219,16 +146,6 @@
   /* ẩn nút đăng ký trên tablet */
   .show-on-mobile {
     display: none;
-  }
-
-  /* footer-top */
-  /* ẩn bỏ 1 column */
-  .footer__column:first-child {
-    display: none;
-  }
-
-  .footer__top {
-    grid-template-columns: 0.5fr 0.5fr 1fr;
   }
 }
 
@@ -266,86 +183,10 @@
   .menu-drawer {
     padding: 40px;
   }
+}
 
-  .hero__img-small {
-    display: none;
-  }
-
-  .hero__img-large {
-    width: 100%;
-    height: auto;
-  }
-
-  /* footer top */
-  .footer__top {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-    margin-bottom: 8px;
-  }
-
-  .hero__heading {
-    font-size: 3rem;
-  }
-
-  .hero__row {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .service {
-    padding: 70px 0;
-  }
-
-  .service__desc {
-    width: 272px;
-  }
-
-  .service__img {
-    width: 100%;
-    height: auto;
-  }
-
-  .service-item {
-    width: 100%;
-    padding: 6px;
-  }
-
-  .work__desc {
-    width: auto;
-  }
-
-  .work-item {
-    padding: 30px;
-  }
-
-  .about {
-    margin-top: 0;
-    padding: 40px 0 4px;
-  }
-
-  .section-heading {
-    font-size: 3rem;
-  }
-
-  .team__list {
-    grid-template-columns: 1fr;
-  }
-
-  .install__inner {
-    margin: 40px 0;
-    padding: 0 8px;
-  }
-
-  .install__content {
-    min-width: 242px;
-  }
-
-  .blog__list {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-  }
-
-  .appointment__inner {
-    padding: 30px 5px;
-  }
+/* Tạm ẩn các phần không liên quan */
+main,
+.footer {
+  display: n one;
 }
